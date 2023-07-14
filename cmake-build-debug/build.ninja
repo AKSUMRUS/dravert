@@ -46,11 +46,11 @@ cmake_ninja_workdir = /Users/paulnikulshin/StudioProjects/dravert/cmake-build-de
 
 build cmake_object_order_depends_target_dravert: phony || CMakeFiles/dravert.dir
 
-build CMakeFiles/dravert.dir/test/test.cpp.o: CXX_COMPILER__dravert_Debug /Users/paulnikulshin/StudioProjects/dravert/test/test.cpp || cmake_object_order_depends_target_dravert
-  DEP_FILE = CMakeFiles/dravert.dir/test/test.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -std=gnu++14
+build CMakeFiles/dravert.dir/dravert.cpp.o: CXX_COMPILER__dravert_Debug /Users/paulnikulshin/StudioProjects/dravert/dravert.cpp || cmake_object_order_depends_target_dravert
+  DEP_FILE = CMakeFiles/dravert.dir/dravert.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -std=gnu++17
   OBJECT_DIR = CMakeFiles/dravert.dir
-  OBJECT_FILE_DIR = CMakeFiles/dravert.dir/test
+  OBJECT_FILE_DIR = CMakeFiles/dravert.dir
 
 
 # =============================================================================
@@ -60,7 +60,7 @@ build CMakeFiles/dravert.dir/test/test.cpp.o: CXX_COMPILER__dravert_Debug /Users
 #############################################
 # Link the executable dravert
 
-build dravert: CXX_EXECUTABLE_LINKER__dravert_Debug CMakeFiles/dravert.dir/test/test.cpp.o
+build dravert: CXX_EXECUTABLE_LINKER__dravert_Debug CMakeFiles/dravert.dir/dravert.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/dravert.dir
   POST_BUILD = :
